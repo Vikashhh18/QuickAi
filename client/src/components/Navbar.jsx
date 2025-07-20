@@ -1,24 +1,25 @@
-import React from 'react'
-import { assets } from '../assets/assets'
-import { useNavigate } from 'react-router-dom'
-import {useClerk,useUser,UserButton,} from '@clerk/clerk-react'
-const Navbar = () => {
 
-    const navigate=useNavigate();
-    const {user}=useUser();
-    const {openSignIn}=useClerk();
+
+import React from 'react';
+import { assets } from '../assets/assets';
+import { useNavigate } from 'react-router-dom';
+import { useClerk, useUser, UserButton } from '@clerk/clerk-react';
+
+const Navbar = () => {
+  const navigate = useNavigate();
+  const { user } = useUser();
+  const { openSignIn } = useClerk();
 
   return (
-    <div className='fixed z-5  w-full backdrop-blur-2xl flex justify-between items-center py-3 px-4 sm:px-20 xl:px-32'>
-        <img src={'./logo.svg'} className='w-40 sm:w-44 ' onClick={()=>navigate('/')} alt="" />
-       {
-        user?<UserButton/>:(
-          <button onClick={openSignIn} className='flex items-center gap-2 rounded-full text-sm cursor-pointer 
-          bg-primary text-white px-10 py-2.5 '>Get Started</button>
-        )
-       }
+    <div className='fixed z-5 w-full backdrop-blur-2xl flex justify-between items-center py-3 px-4 sm:px-20 xl:px-32'>
+      <img src={'./logo.svg'} className='w-40 sm:w-44' onClick={() => navigate('/')} alt="Logo" />
+      {user ? <UserButton /> : (
+        <button onClick={openSignIn} className='flex items-center gap-2 rounded-full text-sm cursor-pointer bg-primary text-white px-10 py-2.5'>
+          Get Started
+        </button>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
