@@ -84,15 +84,25 @@ CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 ```
-### 4.Folder Structure
+### 4. ScreenShort
+<img width="1920" height="4076" alt="screencapture-quick-ai-cyan-vercel-app-2025-07-21-00_56_51" src="https://github.com/user-attachments/assets/92968b44-07d9-4c57-9f40-d61e5decc9ab" />
+<img width="1920" height="1177" alt="screencapture-quick-ai-cyan-vercel-app-ai-2025-07-21-00_57_15" src="https://github.com/user-attachments/assets/09ca5fe8-9cdc-4c51-8b83-462e64896dc5" />
+<img width="1920" height="912" alt="screencapture-quick-ai-cyan-vercel-app-ai-community-2025-07-21-01_03_56" src="https://github.com/user-attachments/assets/8f5d26b9-321a-4cb2-9e5b-dbce6c20babc" />
+
+### 5.Folder Structure
+```bash
 QuickAi/
 ├── client/             # React frontend
+
 ├── server/             # Express backend
 │   ├── routers/
 │   ├── controllers/
 │   ├── config/
 │   └── models/
 ├── README.md
+```
+
+
 
 Author
 Developed by Vikash Sharma
